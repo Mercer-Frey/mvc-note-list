@@ -37,12 +37,12 @@
             self.view.render('showNotes', notesList);
         })
     }
-  NotesController.prototype.searchNote = function (noteText) {
-    var self = this;
-    self.model.searchNote(noteText, function (notesList) {
-      self.view.render('showSearchNotes', notesList);
-    })
-  }
+    NotesController.prototype.searchNote = function (noteText) {
+        var self = this;
+        self.model.searchNote(noteText, function (notesList) {
+        self.view.render('showSearchNotes', notesList);
+        })
+    }
 
 
 }(window));

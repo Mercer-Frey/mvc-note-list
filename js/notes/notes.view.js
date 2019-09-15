@@ -16,10 +16,7 @@
         var self = this;
         var renderCommands = {
             showNotes: function () {
-                // !!! ДЗ !!! отрисовать заметки в HTML
                 self.$notesList.innerHTML = self.templateBuilder.getNotesList(data);
-
-
             },
             showSearchNotes: function () {
               self.$notesList.innerHTML = self.templateBuilder.getSearchNotesList(data);
